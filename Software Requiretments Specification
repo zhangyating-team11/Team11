@@ -1,0 +1,111 @@
+1. Prototype and Risk Status
+Risk	Severity	Response
+Version Control Discrepancies	Medium	Use Github and associated clients to enforce version control
+Competitors	Medium	Implementing unique functions faster than other companies
+New Team	Low	Unite and collaborate to bring everyone's expertise into play to realize code function
+Language Barrier	Low	Such a diverse team naturally experiences language barriers. To overcome this, communicating slowly and clearly, and in a variety of ways, such as with diagrams.
+New Environment	Medium	Research the facilities that the environment has to offer, and try to fix any issues (such as inconsistent wifi)
+New Technology	Medium	Learn different new technologies. People who learn well help us overcome difficulties.
+Time Constraint	High	Complete the final work with high efficiency and high speed.
+Linking of Different Components	Low	Everyone's division of labor is clear. When connecting different components, do you communicate more and accomplish it together.
+
+2. Introduction
+2.1. Goal
+In order to facilitate students to borrow books, reduce the workload of managers, and make books management system more convenient for students to borrow books, this system has a complete system, including the realization of Library management, book entry, borrower admission and return of books.
+2.2.Scope
+There are three main functions that constitute the service scope of library management system: user management, book management and user feedback.
+User management mainly includes user information and user information modification.
+Library management mainly includes the information of books, searching books according to the title or author, and returning books by clicking the return button after reading the books.
+User feedback function is to collect user experience and system deficiencies, and upgrade the system according to user feedback.
+For the initial stage of development, the product scope is defined as a single website, optimized for desktop / laptop and mobile devices. The website will include the functions of user management, book management and user feedback. It will also include basic information about library management system services and company information. The website is mainly responsible for information such as student borrowing in the school library. Promoting students to return books independently also reduces the workload of managers.
+The second phase of development will be the production of iOS and Android mobile applications, which will allow users to access user management, book management and user feedback services on the mobile platform.
+
+In addition, the initial development stage will only see the main schools supported by the library management system, but further development will expand this function to more schools.
+Functions not covered by this product but considered include positioning, online chat and other functions.
+2.3 Glossary
+Term	Definition
+user management	Effective management of the basic information of borrowers.
+Modify user	Modify the user's basic information and save it.
+Library Management	Define the basic information of a book, such as chapters and authors.
+Library Management System	Name of the website
+Student	Students use this system to borrow books.
+Management	Managers use this system for background monitoring, checking the records of books borrowed, etc.
+
+2.4. Overview
+Library management system is a service that makes it easier to borrow books. Using this system configuration, the library management system allows students to create their own accounts with their school numbers to facilitate book borrowing. Students can search for books they want to borrow on the website. Check stock adequacy and Book return. Library management system focuses on the use of students'borrowing books.
+3. Use Cases
+3.1。 Actors and stakeholders list
+Actor Name	Stakeholder Classification, 	Description
+Student	 public actors	use the library management system to reach the end-users who borrow books. This person 
+Administrators	public actors	use this system to monitor books borrowing and time records, timely remind students and overtime fines and other acts.
+3.2 Major Use Case Diagram
+Description: Students can use this system to quickly query the books they need, and to facilitate the return of books, as well as the management of the loan and return of books by the administrator. First, the user logs in or registers. After login, there will be a user management information, and then operate; after login, the administrator will display the information of library management and user feedback, and the administrator will process these information.
+3.3 use case 1
+Description: This chart describes the user borrowing books, if the book is selected, and then do not want to borrow, you can modify, re-select.
+3.4 use case 2
+Description: This chart describes how the administrator can check the books borrowed by the user, then return the information of the books for deletion, and finally the system shows that the user has returned the books on time.
+4. User stories
+1. Students
+When students go to the books to read, they can use this software to find books and return books automatically without queuing, which reduces the time and is convenient and fast.
+2. Administrator
+Through the background to check, students borrow books, and students return books, so that they can facilitate their statistics, fast completion of the work.
+3, disable
+It is not a teacher or a student in the school. It is not allowed to enter the software to borrow and return books. The purpose is to protect the security of the school library management system.
+5. Other/non-functional requirements
+5.1. Environmental requirements
+Use a variety of software tools and development environment to create a library management system.
+Tool	Description	Used For
+GitHub	Web-based Git version control hosting service	Maintaining complete and up-to-date source code
+GitHub Desktop/GitKracken	Client for accessing GitHub services	Synchronising local files with the GitHub repository
+Brackets	Text editor designed for web development	Writing source code
+Google Chrome	Web browser	Viewing html documents
+Bootstrap	Open source toolkit for developing adaptive HTML, CSS, and JavaScript	Ensuring the website has the necessary components and can be adapted to many devices
+Adobe Illustrator	Vector graphic design software	Designing website graphics such as logos and buttons
+The software that end users need to access the library management system is：
+Tool	Description	Used For
+Desktop Web Browser	Access the internet on desktop/laptop computers	Gaining access and displaying the Travolla website
+Mobile Web Browser	Access the internet on mobile devices (smartphones, tablets)	Gaining access and displaying the Travolla website
+
+5.2 Hardware Requirements
+Tool	Description	Used For
+Laptop Computer	A portable personal computer	The development of the Travolla website, maintaining the source code, testing the software
+Server	Device that provides functionality for clients	Hosting the database, storing back-end data
+Wireless Router	A wireless access point to provide access to the internet	Accessing the internet for research, version control, testing
+Smartphone	A handheld personal computer with a mobile operating system	Testing on mobile devices
+The development of library management system needs various hardware:
+The hardware required to use the application includes one or more of:
+Tool	Description	Used For
+Smartphone	A handheld personal computer with a mobile operating system	Accessing the Travolla website 'on the go'
+Laptop/Desktop Computer + internet connection	A personal computer that can be used to access the internet	Accessing the Travolla website
+
+
+5.3 Other requirements
+For the development of library management system, we must understand the following tools and languages:
+• HTML
+JavaScript
+• PHP
+• SQL
+Definition/creation of databases
+End users need basic computer knowledge, such as access to websites and use of mobile applications.
+Further requirements for the Travolla platform are as follows:
+The ability of multiple users to use the platform at the same time
+All user information must be secure with a hash password
+The ability of users to access the platform from any location via Internet connections
+Ensure that all users are as secure as possible and that users are not abused by using the platform
+6. User Interface Prototype
+User login
+Administrator login
+register
+user management
+User information
+User modification
+User deletion
+Book management
+Book Search
+Book modification
+Book deletion
+Books have been borrowed.
+User return book
+User feedback
+Add feedback
+Feedback query
